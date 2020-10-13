@@ -9,7 +9,7 @@
 
     <title>{{ config('app.name', 'Volcano') }}</title>
 
-    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.ico') }}">
+{{--    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.ico') }}">--}}
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">

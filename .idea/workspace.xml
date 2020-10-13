@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ca1ea51-96e3-4207-9d32-0a185a59ae71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/client_main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/client_main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/6fcd23792b8c213d19203a289ad9fb595e6703dd.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6fcd23792b8c213d19203a289ad9fb595e6703dd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-10-13.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel-2020-10-13.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +132,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602597557221</updated>
-      <workItem from="1602597568798" duration="966000" />
+      <workItem from="1602597568798" duration="1359000" />
     </task>
     <servers />
   </component>

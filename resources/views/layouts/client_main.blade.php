@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Volcano') }}</title>
-    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.ico') }}">
+{{--    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.ico') }}">--}}
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
