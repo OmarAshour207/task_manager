@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Taskly') }}</title>
+    <title>{{ config('app.name', 'Volcano') }}</title>
     <link rel="shortcut icon" href="{{ asset('assets/img/favicon.ico') }}">
 
     <!-- General CSS Files -->
@@ -30,7 +30,7 @@
         <div class="main-wrapper">
             <div class="navbar-bg"></div>
             <nav class="text-center mt-3">
-                <img src="{{asset(Storage::url('logo/logo-full.png'))}}" alt="{{ env('APP_NAME') }}" height="35">
+                <img src="{{asset(Storage::url('logo/default.png'))}}" alt="{{ env('APP_NAME') }}" height="35">
             </nav>
             <!-- Main Content -->
             <div class="main-content" style="padding-left: 30px;padding-top: 20px;">
