@@ -4,9 +4,10 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class User extends Authenticatable implements JWTSubject
 {
     use Notifiable;
 
@@ -48,6 +49,24 @@ class User extends Authenticatable
     }
     public function countTask($workspace_id){
         return Task::join('projects','tasks.project_id','=','projects.id')->where('projects.workspace','=',$workspace_id)->where('tasks.assign_to','=',$this->id)->count();
+    }
+
+    // Attributes
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
+
+    public function setPasswordAttribute($password)
+    {
+        if ( !empty($password) ) {
+            $this->attributes['password'] = bcrypt($password);
+        }
     }
 
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Traits\Response;
 use App\Mail\SendLoginDetail;
 use App\User;
 use App\UserProject;
@@ -22,6 +23,9 @@ class UserController extends Controller
      *
      * @return void
      */
+
+    use Response;
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -36,7 +40,11 @@ class UserController extends Controller
     public function index($slug)
     {
         $currantWorkspace = Utility::getWorkspaceBySlug($slug);
-        $users = User::select('users.*','user_workspaces.permission')->join('user_workspaces','user_workspaces.user_id','=','users.id')->where('user_workspaces.workspace_id','=',$currantWorkspace->id)->get();
+        $users = User::select('users.*','user_workspaces.permission')
+            ->join('user_workspaces','user_workspaces.user_id', '=', 'users.id')
+            ->where('user_workspaces.workspace_id', '=', $currantWorkspace->id)
+            ->get();
+
         return view('users.index',compact('currantWorkspace','users'));
     }
 
